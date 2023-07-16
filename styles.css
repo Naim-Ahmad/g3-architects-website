@@ -142,6 +142,31 @@ nav a {
   margin-top: 2px;
   margin-bottom: 0;
 }
+/* fact section styles */
+.facts-section {
+  margin-top: 100px;
+}
+.fact-description-container {
+  max-width: 542px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: space-around;
+  margin: 100px 0;
+}
+.card {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid gainsboro;
+  border-radius: 8px;
+}
+.card > * {
+  margin: 5px 0;
+}
+.card img {
+  width: 2rem;
+}
 /* responsive media queries */
 /* for tablet or medium devices */
 @media screen and (max-width: 992px) {
@@ -166,5 +191,15 @@ nav a {
     left: 50%;
     transform: translateX(-50%);
     top: -3rem;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 250px);
+    row-gap: 5vw;
+  }
+}
+/* mobile or small devices */
+@media screen and (max-width: 576px) {
+  .card-container {
+    grid-template-columns: 1fr;
   }
 }
