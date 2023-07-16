@@ -172,7 +172,7 @@ nav a {
   display: grid;
   grid-template-columns: repeat(5, 150px);
   justify-content: space-between;
-  margin-top: 50px;
+  margin: 50px 0;
   gap: 50px;
 }
 .sponsor-content {
@@ -180,6 +180,15 @@ nav a {
   margin: auto;
   text-align: center;
 }
+footer {
+  background-color: #fff4e7;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* responsive media queries */
 /* for tablet or medium devices */
 @media screen and (max-width: 992px) {
