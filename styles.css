@@ -20,7 +20,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 76px;
 }
 .title-2 {
   color: #131313;
@@ -32,6 +31,11 @@ img {
   text-align: center;
   font-size: 64px;
   font-weight: 700;
+}
+.title-3 {
+  color: var(--dark-01, #131313);
+  font-size: 20px;
+  font-weight: 600;
 }
 .description {
   color: var(--dark-03, #727272);
@@ -75,43 +79,78 @@ nav a {
 .banner-img {
   margin: 50px 0px;
 }
-/* features section styles */
-.features {
+/* teams section styles */
+.teams {
   margin: 85px 0px;
+  gap: 76px;
 }
 .teams-img-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
-.features > * {
+.teams > * {
   flex: 1;
 }
-.features-content .quick-list {
+.teams-content .quick-list {
   color: var(--dark-03, #727272);
   font-size: 45px;
   font-style: normal;
   font-weight: 500;
 }
 .of-our,
-.features-text {
+.teams-text {
   font-size: 45px;
   font-weight: 700;
 }
-.features-text {
+.teams-text {
   color: #ff900e;
 }
-.features-content .btn {
+.teams-content .btn {
   margin: 36px 0px;
+}
+/* features section styles */
+.features-section {
+  gap: 100px;
+}
+.features-content > h2 {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.features-section > * {
+  flex: 1;
+}
+.features-card {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-top: 20px;
+  padding: 20px;
+}
+.feature-img .btn {
+  max-width: 250px;
+  max-height: 200px;
+  text-align: center;
+  position: relative;
+  top: -4rem;
+  left: -4rem;
+}
+.feature-img .badge-stats {
+  margin: 0;
+}
+.feature-img p {
+  margin-top: 2px;
+  margin-bottom: 0;
 }
 /* responsive media queries */
 /* for tablet or medium devices */
 @media screen and (max-width: 992px) {
   nav,
-  .features {
+  .features-section,
+  .teams {
     flex-direction: column;
   }
-  .features {
+  .teams {
     text-align: center;
   }
   .title-1 {
@@ -122,5 +161,10 @@ nav a {
   }
   nav li {
     margin-left: 16px;
+  }
+  .feature-img .btn {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -3rem;
   }
 }
