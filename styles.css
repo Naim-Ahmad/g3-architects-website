@@ -1,0 +1,7 @@
+/* google work sans font connection */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;900&display=swap');
+
+/* shared common styles */
+* {
+  font-family: 'Work Sans', sans-serif;
+}
